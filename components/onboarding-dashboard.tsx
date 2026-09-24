@@ -20,6 +20,8 @@ import {
   Zap,
 } from 'lucide-react'
 
+const welcomeVideo = 'https://www.youtube.com/embed/3JTM2o-1r5E?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1&playsinline=1'
+
 const images = {
   hero: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-24%20at%2011.28.13%20AM-3YWpXFizNTZMMfozrMizffHtZerlmt.jpeg',
   stage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-24%20at%2011.12.14%20AM%20%282%29-2iT8YdqxUU0knwlWHWY3vRa8ofLxXR.jpeg',
@@ -73,7 +75,7 @@ export function OnboardingDashboard() {
           {menuOpen ? <X size={19} /> : <Menu size={19} />}
         </button>
       </nav>
-      {menuOpen && <div className="relative z-20 mx-5 rounded-2xl border border-[#102c24]/10 bg-white p-4 shadow-lg md:hidden"><div className="grid gap-3 text-sm font-semibold"><a href="#start" onClick={() => setMenuOpen(false)}>Start here</a><a href="#journey" onClick={() => setMenuOpen(false)}>Your journey</a><a href="#community" onClick={() => setMenuOpen(false)}>Community</a></div></div>}
+      {menuOpen && <div className="relative z-20 mx-5 rounded-2xl border border-[#102c24]/10 bg-white p-4 shadow-lg md:hidden"><div className="grid gap-3 text-sm font-semibold"><a href="#start" onClick={() => setMenuOpen(false)}>Start here</a><a href="#journey" onClick={() => setMenuOpen(false)}>Your journey</a><a href="#schedule" onClick={() => setMenuOpen(false)}>Schedule</a><a href="#community" onClick={() => setMenuOpen(false)}>Community</a></div></div>}
 
       <section id="top" className="relative z-10 mx-auto grid max-w-7xl gap-10 px-5 pb-20 pt-10 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:pb-28 lg:pt-20">
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -85,7 +87,7 @@ export function OnboardingDashboard() {
         </div>
         <div className="relative animate-in fade-in zoom-in-95 duration-1000">
           <div className="absolute -right-2 top-4 z-10 rotate-6 rounded-2xl bg-[#a9f229] px-4 py-3 text-xs font-black uppercase tracking-wider text-[#102c24] shadow-lg sm:right-8">Explore · Grow · Prosper</div>
-          <div className="aspect-[.9] overflow-hidden rounded-[2.2rem] border-[10px] border-white shadow-2xl shadow-[#1c513b]/15 sm:aspect-[1.05] lg:aspect-[.9]"><img src={images.hero} alt="Esyasoft Graduate Program 2026 welcome artwork" className="h-full w-full object-cover object-left transition-transform duration-700 hover:scale-105" /></div>
+          <div className="overflow-hidden rounded-[2.2rem] border-[10px] border-white bg-[#102c24] shadow-2xl shadow-[#1c513b]/15"><div className="relative aspect-[1.15] overflow-hidden sm:aspect-[1.35] lg:aspect-[1.05]"><img src={images.hero} alt="Esyasoft Graduate Program 2026 welcome artwork" className="h-full w-full object-cover object-left transition-transform duration-700 hover:scale-105" /><div className="absolute bottom-4 left-4 rounded-full bg-[#102c24]/85 px-3 py-2 text-xs font-bold text-white backdrop-blur"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-[#b8f73a]" />Welcome to your first 30 days</div></div><div className="border-t border-white/10 p-3"><div className="mb-3 flex items-center justify-between px-1"><div><p className="text-[10px] font-black uppercase tracking-[.18em] text-[#b8f73a]">Start with a hello</p><p className="mt-1 text-sm font-bold text-white">Watch the welcome message</p></div><Play size={16} className="text-[#b8f73a]" fill="currentColor" /></div><div className="aspect-video overflow-hidden rounded-2xl bg-black"><iframe className="h-full w-full" src={welcomeVideo} title="Esyasoft Graduate Program welcome message" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen /></div></div></div>
           <div className="absolute -bottom-5 -left-3 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-xl backdrop-blur sm:left-5"><div className="flex items-center gap-3"><span className="grid h-10 w-10 place-items-center rounded-xl bg-[#eaffd1] text-[#4da749]"><Flame size={20} /></span><div><p className="text-xs text-[#678079]">Today&apos;s energy</p><p className="font-black">Curious &amp; ready</p></div></div></div>
         </div>
       </section>
