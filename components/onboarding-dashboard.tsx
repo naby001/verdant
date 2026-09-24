@@ -43,6 +43,7 @@ const policies = [
 ]
 
 const images = {
+  mascot: '/site-mascot.png',
   founder: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images-sZLCMiKwXrtdxwtCOjtE4EsQew3I5P.jpg',
   hero: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-24%20at%2011.28.13%20AM-3YWpXFizNTZMMfozrMizffHtZerlmt.jpeg',
   stage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-24%20at%2011.12.14%20AM%20%282%29-2iT8YdqxUU0knwlWHWY3vRa8ofLxXR.jpeg',
@@ -83,8 +84,8 @@ export function OnboardingDashboard() {
       </div>
 
       <nav className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
-        <a href="#top" className="flex items-center gap-2 font-bold tracking-tight" aria-label="Esyasoft Graduate Program home">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-[#a9f229] text-[#102c24]"><Leaf size={18} strokeWidth={2.5} /></span>
+        <a href="#top" className="flex items-center gap-3 font-bold tracking-tight" aria-label="Esyasoft Graduate Program home">
+          <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-[#a9f229] ring-2 ring-white shadow-sm"><img src={images.mascot} alt="Esyasoft mascot" className="h-full w-full object-contain" /></span>
           <span className="text-lg">esya<span className="text-[#57b85c]">soft</span></span>
         </a>
         <div className="hidden items-center gap-8 text-sm font-semibold md:flex">
@@ -102,7 +103,7 @@ export function OnboardingDashboard() {
 
       <section id="top" className="relative z-10 mx-auto grid max-w-7xl gap-10 px-5 pb-20 pt-10 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:pb-28 lg:pt-20">
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#84c957]/40 bg-white/70 px-3 py-1.5 text-xs font-bold uppercase tracking-[.18em] text-[#428c4c]"><Sparkles size={14} /> Graduate program 2026</div>
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#84c957]/40 bg-white/70 px-3 py-1.5 text-xs font-bold uppercase tracking-[.18em] text-[#428c4c]"><Sparkles size={14} /> Graduate program 2026</div><div className="mb-6 flex items-center gap-3"><img src={images.mascot} alt="Friendly Esyasoft onboarding mascot" className="h-16 w-16 object-contain" /><p className="max-w-xs text-sm font-bold leading-5 text-[#41615a]">Your friendly guide to the first 30 days.</p></div>
           <h1 className="max-w-3xl text-5xl font-black leading-[.93] tracking-[-.055em] sm:text-7xl">Your first 30 days.<br /><span className="text-[#59bd4e]">Made simple.</span></h1>
           <p className="mt-7 max-w-xl text-lg leading-8 text-[#41615a]">Welcome to Esyasoft. Think of this as your friendly map for finding your people, learning how things work, and building something you&apos;ll be proud of.</p>
           <div className="mt-8 flex flex-wrap gap-3"><a href="#start" className="group inline-flex items-center gap-3 rounded-full bg-[#102c24] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_25px_rgba(16,44,36,.18)] transition-all hover:-translate-y-1 hover:bg-[#1f5143]">Show me the way <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" /></a><a href="#journey" className="inline-flex items-center gap-2 rounded-full border border-[#102c24]/15 bg-white/60 px-5 py-3.5 text-sm font-bold transition-all hover:bg-white"><Play size={15} fill="currentColor" /> See the journey</a></div>
