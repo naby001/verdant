@@ -24,10 +24,10 @@ import {
 const welcomeVideo = 'https://www.youtube.com/embed/3JTM2o-1r5E?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1&playsinline=1'
 
 const collaboratorLogos = [
-  { name: 'Adani', src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dLoXDWnRnDS1HkG9HnyiRjtAkGFQRG.png' },
+  { name: 'Adani', src: 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/adani/default.svg' },
   { name: 'Esyasoft', src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GW5HCYjzZqe3FCDBLzUFfY9xZdOUV0.png' },
-  { name: 'Landis+Gyr', src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3Q9BoKkHgfeL7pSTAF6n6kAUm1FeSk.png' },
-]
+  { name: 'Landis+Gyr', src: 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/landis-gyr/default.svg' },
+  ]
 
 const policies = [
   { title: 'Information Security', detail: 'Protect company systems, credentials, devices and confidential information. Follow all security and access-control procedures.' },
